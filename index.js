@@ -24,6 +24,10 @@ mongoose
 // Routes
 app.use("/api/items", itemsRoute);
 
+
+//test
+app.get('/health', (req, res) => res.send('API is working!'));
+
 // Start server
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
